@@ -3,9 +3,9 @@
     <h3 class="title">我们为能源互联网而生，我们更懂售电</h3>
     <div class="desc">致力于推动配售电、云计算、电力大数据、区块链等新兴领域的能源智能化技术研究，助力能源企业转型升级，加速全球能源互联互通</div>
     <ul class="content">
-      <li class="item">
+      <li class="item" @mouseenter="handleMouseenter1" @mouseleave="handleMouseleave1">
         <img src="http://www.gaoenergy.com/images/s33bg01.png" class="item-img">
-        <div class="card">
+        <div class="card" ref="card1">
           <div class="card-wrapper1">
             <div class="content-a">
               <i class="iconfont">&#xe61c;</i>
@@ -22,9 +22,9 @@
           </div>
         </div>
       </li>
-      <li class="item">
+      <li class="item" @mouseenter="handleMouseenter2" @mouseleave="handleMouseleave2">
         <img src="http://www.gaoenergy.com/images/s33bg02.png" class="item-img">
-        <div class="card">
+        <div class="card" ref="card2">
           <div class="card-wrapper1">
             <div class="content-a">
               <i class="iconfont">&#xe66a;</i>
@@ -41,9 +41,9 @@
           </div>
         </div>
       </li>
-      <li class="item">
+      <li class="item" @mouseenter="handleMouseenter3" @mouseleave="handleMouseleave3">
         <img src="http://www.gaoenergy.com/images/s33bg03.png" class="item-img">
-        <div class="card">
+        <div class="card" ref="card3">
           <div class="card-wrapper1">
             <div class="content-a">
               <i class="iconfont">&#xe622;</i>
@@ -60,9 +60,9 @@
           </div>
         </div>
       </li>
-      <li class="item">
+      <li class="item" @mouseenter="handleMouseenter4" @mouseleave="handleMouseleave4">
         <img src="http://www.gaoenergy.com/images/s33bg04.png" class="item-img">
-        <div class="card">
+        <div class="card" ref="card4">
           <div class="card-wrapper1">
             <div class="content-a">
               <i class="iconfont">&#xe61f;</i>
@@ -79,9 +79,9 @@
           </div>
         </div>
       </li>
-      <li class="item">
+      <li class="item" @mouseenter="handleMouseenter5" @mouseleave="handleMouseleave5">
         <img src="http://www.gaoenergy.com/images/s33bg05.png" class="item-img">
-        <div class="card">
+        <div class="card" ref="card5">
             <div class="card-wrapper1">
               <div class="content-a">
                 <i class="iconfont">&#xe620;</i>
@@ -104,7 +104,173 @@
 
 <script>
   export default {
-    name: "HomePart3"
+    name: "HomePart3",
+    data(){
+      return{
+        timer1:null,
+        timer2:null,
+        timer3:null,
+        timer4:null,
+        timer5:null,
+        timer6:null,
+        timer7:null,
+        timer8:null,
+        timer9:null,
+        timer10:null
+      }
+    },
+    methods:{
+      handleMouseenter1(){
+        var that=this
+        var target=-382
+        var step=0
+        clearInterval(that.timer1)
+        clearInterval(that.timer2)
+        that.timer1=setInterval(function () {
+          step=(-392-that.$refs.card1.offsetTop)/5
+          that.$refs.card1.style.top=that.$refs.card1.offsetTop+step+'px'
+          if(Math.abs(step)<=5||that.$refs.card1.offsetTop<-392){
+            that.$refs.card1.style.top=-392+'px'
+            clearInterval(that.timer1)
+          }
+        },50)
+      },
+      handleMouseleave1(){
+        var that=this
+        var target=0
+        var step=0
+        clearInterval(that.timer1)
+        clearInterval(that.timer2)
+        that.timer2=setInterval(function () {
+          step=(0-that.$refs.card1.offsetTop)/5
+          that.$refs.card1.style.top=that.$refs.card1.offsetTop+step+'px'
+          if(Math.abs(step)<=5||that.$refs.card1.offsetTop>0){
+            that.$refs.card1.style.top=0+'px'
+            clearInterval(that.timer2)
+          }
+        },50)
+      },
+      handleMouseenter2(){
+        var that=this
+        var target=-382
+        var step=0
+        clearInterval(that.timer3)
+        clearInterval(that.timer4)
+        that.timer3=setInterval(function () {
+          step=(-392-that.$refs.card2.offsetTop)/5
+          that.$refs.card2.style.top=that.$refs.card2.offsetTop+step+'px'
+          if(Math.abs(step)<=5||that.$refs.card2.offsetTop<-392){
+            that.$refs.card2.style.top=-392+'px'
+            clearInterval(that.timer3)
+          }
+        },50)
+      },
+      handleMouseleave2(){
+        var that=this
+        var target=0
+        var step=0
+        clearInterval(that.timer3)
+        clearInterval(that.timer4)
+        that.timer4=setInterval(function () {
+          step=(0-that.$refs.card2.offsetTop)/5
+          that.$refs.card2.style.top=that.$refs.card2.offsetTop+step+'px'
+          if(Math.abs(step)<=5||that.$refs.card2.offsetTop>0){
+            that.$refs.card2.style.top=0+'px'
+            clearInterval(that.timer4)
+          }
+        },50)
+      },
+      handleMouseenter3(){
+        var that=this
+        var target=-382
+        var step=0
+        clearInterval(that.timer5)
+        clearInterval(that.timer6)
+        that.timer5=setInterval(function () {
+          step=(-392-that.$refs.card3.offsetTop)/5
+          that.$refs.card3.style.top=that.$refs.card3.offsetTop+step+'px'
+          if(Math.abs(step)<=5||that.$refs.card3.offsetTop<-392){
+            that.$refs.card3.style.top=-392+'px'
+            clearInterval(that.timer5)
+          }
+        },50)
+      },
+      handleMouseleave3(){
+        var that=this
+        var target=0
+        var step=0
+        clearInterval(that.timer5)
+        clearInterval(that.timer6)
+        that.timer6=setInterval(function () {
+          step=(0-that.$refs.card3.offsetTop)/5
+          that.$refs.card3.style.top=that.$refs.card3.offsetTop+step+'px'
+          if(Math.abs(step)<=5||that.$refs.card3.offsetTop>0){
+            that.$refs.card3.style.top=0+'px'
+            clearInterval(that.timer6)
+          }
+        },50)
+      },
+      handleMouseenter4(){
+        var that=this
+        var target=-382
+        var step=0
+        clearInterval(that.timer7)
+        clearInterval(that.timer8)
+        that.timer7=setInterval(function () {
+          step=(-392-that.$refs.card4.offsetTop)/5
+          that.$refs.card4.style.top=that.$refs.card4.offsetTop+step+'px'
+          if(Math.abs(step)<=5||that.$refs.card4.offsetTop<-392){
+            that.$refs.card4.style.top=-392+'px'
+            clearInterval(that.timer7)
+          }
+        },50)
+      },
+      handleMouseleave4(){
+        var that=this
+        var target=0
+        var step=0
+        clearInterval(that.timer7)
+        clearInterval(that.timer8)
+        that.timer8=setInterval(function () {
+          step=(0-that.$refs.card4.offsetTop)/5
+          that.$refs.card4.style.top=that.$refs.card4.offsetTop+step+'px'
+          if(Math.abs(step)<=5||that.$refs.card4.offsetTop>0){
+            that.$refs.card4.style.top=0+'px'
+            clearInterval(that.timer8)
+          }
+        },50)
+      },
+      handleMouseenter5(){
+        var that=this
+        var target=-382
+        var step=0
+        clearInterval(that.timer9)
+        clearInterval(that.timer10)
+        that.timer9=setInterval(function () {
+          step=(-392-that.$refs.card5.offsetTop)/5
+          that.$refs.card5.style.top=that.$refs.card5.offsetTop+step+'px'
+          if(Math.abs(step)<=5||that.$refs.card5.offsetTop<-392){
+            that.$refs.card5.style.top=-392+'px'
+            clearInterval(that.timer9)
+          }
+        },50)
+      },
+      handleMouseleave5(){
+        var that=this
+        var target=0
+        var step=0
+        clearInterval(that.timer9)
+        clearInterval(that.timer10)
+        that.timer10=setInterval(function () {
+          step=(0-that.$refs.card5.offsetTop)/5
+          that.$refs.card5.style.top=that.$refs.card5.offsetTop+step+'px'
+          if(Math.abs(step)<=5||that.$refs.card5.offsetTop>0){
+            that.$refs.card5.style.top=0+'px'
+            clearInterval(that.timer10)
+          }
+        },50)
+      }
+    }
   }
 </script>
 
@@ -126,6 +292,7 @@
     .content
       height 382px
       margin 0 20px
+      overflow hidden
       .item
         position relative
         float left
@@ -145,7 +312,6 @@
               width 240px
               height 364px
               margin 10px 10px 0
-              background red
               .iconfont
                 display inline-block
                 margin 25px 0
@@ -158,13 +324,15 @@
                 padding-bottom 20px
                 color #ffffff
           .card-wrapper2
-            width 100%
-            height 50%
+            width 240px
+            height 362px
+            padding 10px
             background #319CFF
             .content-b
-              width 240px
+              /*width 240px*/
+              /*height 364px*/
+              width 236px
               height 360px
-              margin 10px 10px 0
               border 2px solid #fff
               .iconfont
                 display inline-block
