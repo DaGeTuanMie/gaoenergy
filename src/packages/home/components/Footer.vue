@@ -26,8 +26,22 @@
             <dd class="content-desc">校园招聘</dd>
             <dd class="content-desc">人才智库</dd>
           </dl>
+          <div class="qr">
+            <img src="http://www.gaoenergy.com/images/erweima_03.png" class="qr-img">
+            <p class="qr-desc">关注微信订阅号</p>
+            <p class="qr-desc">实时了解能源新生态</p>
+          </div>
         </div>
-        <div class="footer-b"></div>
+        <div class="footer-b">
+          <div class="copyright">版权所有 ©上海朋迈能源科技有限公司备案号：沪ICP备17004203号-1</div>
+          <div class="tel">
+            <i class="iconfont icon1">&#xe643;</i>
+            <div class="tel-desc">
+              <p class="tel-desc1">服务热线：400-138 - 0266</p>
+              <p class="tel-desc2">固定电话：021-69286008</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 </template>
@@ -61,4 +75,41 @@
             padding-bottom 30px
           .content-desc
             margin-bottom 12px
+            cursor pointer
+          .content-desc:hover
+            color #38B59B
+        .qr
+          float right
+          width 300px
+          text-align center
+          .qr-img
+            width 100px
+            height 100px
+            padding-bottom 20px
+          .qr-desc
+            line-height 24px
+            color #999
+      .footer-b
+        float left
+        width 100%
+        padding 20px 0
+        .copyright
+          float left
+          width 600px
+        .tel
+          float right
+          width 237px
+          .icon1
+            float left
+            display inline-block
+            font-size 38px
+            color #38B59B
+          .tel-desc
+            float right
+            color #38B59B
+            text-align center
+            .tel-desc1
+              font-size 16px
+            .tel-desc2
+              padding-top 5px
 </style>

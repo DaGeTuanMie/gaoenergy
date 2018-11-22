@@ -6,6 +6,7 @@
     <home-part4></home-part4>
     <home-part5></home-part5>
     <home-footer></home-footer>
+    <home-scroll></home-scroll>
   </div>
 </template>
 
@@ -16,6 +17,7 @@
     import HomePart4 from './components/Part4'
     import HomePart5 from './components/Part5'
     import HomeFooter from './components/Footer'
+    import HomeScroll from './components/Scroll'
     export default {
         name: "Home",
         components:{
@@ -24,7 +26,8 @@
           HomePart3,
           HomePart4,
           HomePart5,
-          HomeFooter
+          HomeFooter,
+          HomeScroll
         }
     }
 </script>
