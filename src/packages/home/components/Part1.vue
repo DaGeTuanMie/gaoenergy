@@ -4,8 +4,8 @@
         <div class="header">
           <img src="http://product.gaoenergy.com/images/logo-w.png" class="header-img">
           <ul class="header-content">
-            <li class="header-item"><a href="javascript:void (0)" class="header-desc selected">首页</a></li>
-            <li class="header-item"><a href="javascript:void (0)" class="header-desc">PIPE生态</a></li>
+            <li class="header-item"><router-link to="/" class="header-desc selected">首页</router-link></li>
+            <li class="header-item"><router-link to="/zoology" class="header-desc">PIPE生态</router-link></li>
             <li class="header-item"><a href="javascript:void (0)" class="header-desc" @mouseenter="handleMouseEnter" @mouseout="handleMouseOver">产品中心</a></li>
             <li class="header-item"><a href="javascript:void (0)" class="header-desc">研究院</a></li>
             <li class="header-item"><a href="javascript:void (0)" class="header-desc">渠道招募</a></li>
