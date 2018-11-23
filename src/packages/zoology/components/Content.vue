@@ -4,9 +4,9 @@
         <div class="section1-nav">
           <ul class="section1-header">
             <li class="section1-item"><a href="#" class="section1-link link-one">平台简介</a></li>
-            <li class="section1-item"><a href="#" class="section1-link">基础设施服务</a></li>
-            <li class="section1-item"><a href="#" class="section1-link">能源应用中心</a></li>
-            <li class="section1-item"><a href="#" class="section1-link">大数据认知服务</a></li>
+            <li class="section1-item"><a href="#" class="section1-link" @mouseenter="handlemouseenter1" @mouseout="handlemouseout1" :class="{'link-one':isShow1}">基础设施服务</a></li>
+            <li class="section1-item"><a href="#" class="section1-link" @mouseenter="handlemouseenter2" @mouseout="handlemouseout2" :class="{'link-one':isShow2}">能源应用中心</a></li>
+            <li class="section1-item"><a href="#" class="section1-link" @mouseenter="handlemouseenter3" @mouseout="handlemouseout3" :class="{'link-one':isShow3}">大数据认知服务</a></li>
           </ul>
         </div>
         <div class="section1-title">PIPE平台是谁？</div>
@@ -54,7 +54,34 @@
 
 <script>
     export default {
-        name: "ZoologyContent"
+        name: "ZoologyContent",
+        data(){
+          return{
+            isShow1:false,
+            isShow2:false,
+            isShow3:false
+          }
+        },
+      methods:{
+        handlemouseenter1(){
+          this.isShow1=true
+        },
+        handlemouseout1(){
+          this.isShow1=false
+        },
+        handlemouseenter2(){
+          this.isShow2=true
+        },
+        handlemouseout2(){
+          this.isShow2=false
+        },
+        handlemouseenter3(){
+          this.isShow3=true
+        },
+        handlemouseout3(){
+          this.isShow3=false
+        }
+      }
     }
 </script>
 
