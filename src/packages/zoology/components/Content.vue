@@ -38,6 +38,17 @@
           </div>
         </div>
       </div>
+      <div class="section3">
+        <div class="section3-wrapper">
+          <div class="section3-title">我们的目标</div>
+          <div class="section3-desc1">构建能源服务生态，为综合能源服务商赋能</div>
+          <div class="section3-desc2">构建一个连接能源、设备、用能方、服务方的开放式生态系统，为综合能源服务商提供电力应用、大数据、云计算、人工智能、能源微架构等服务，通过新一代信息技术和电力技术的创新与融合，助力传统能源服务业务快速转型。</div>
+          <img src="http://www.gaoenergy.com/images/pipe-img02.png" class="section3-img">
+          <div class="section3-welcome">
+            <div class="welcome-desc"><i class="iconfont icon1">&#xe603;</i>欢迎合作伙伴加入，共建能源生态圈<i class="iconfont icon2">&#xe603;</i></div>
+          </div>
+        </div>
+      </div>
     </div>
 </template>
 
@@ -127,4 +138,33 @@
                 font 400 14px/24px microsoft
               .section2-color
                 color #38B59B
+    .section3
+      width 100%
+      padding-top 50px
+      .section3-wrapper
+        width 1200px
+        margin 0 auto
+        text-align center
+        .section3-title
+          font 600 48px simsun
+          padding 50px 0 20px
+          text-align center
+        .section3-desc1
+          padding-top 20px
+          font 400 24px/26px simsun
+          margin-bottom 20px
+          text-align left
+        .section3-desc2
+          padding-bottom 50px
+          font 400 14px/26px simsun
+          margin-bottom 20px
+          text-align left
+        .section3-img
+          display inline-block
+        .section3-welcome
+          padding 40px 0 80px
+          .welcome-desc
+            font 400 18px simsun
+            .iconfont
+              color #7FB7E6
 </style>
