@@ -9,7 +9,7 @@
             <li class="header-item"><a href="javascript:void (0)" class="header-desc" @mouseenter="handleMouseEnter" @mouseout="handleMouseOver">产品中心</a></li>
             <li class="header-item"><a href="javascript:void (0)" class="header-desc">研究院</a></li>
             <li class="header-item"><a href="javascript:void (0)" class="header-desc">渠道招募</a></li>
-            <li class="header-item"><a href="javascript:void (0)" class="header-desc">关于我们</a></li>
+            <li class="header-item"><router-link to="/forus" class="header-desc">关于我们</router-link></li>
           </ul>
         </div>
         <div class="center"><img src="http://product.gaoenergy.com/images/s1img.png" class="center-img"></div>
