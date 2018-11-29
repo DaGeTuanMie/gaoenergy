@@ -5,6 +5,7 @@
       <forus-part3></forus-part3>
       <forus-part4></forus-part4>
       <forus-part5></forus-part5>
+      <forus-part6></forus-part6>
     </div>
 </template>
 
@@ -15,6 +16,7 @@
     import ForusPart3 from './components/Part3'
     import ForusPart4 from './components/Part4'
     import ForusPart5 from './components/Part5'
+    import ForusPart6 from './components/Part6'
     export default {
         name: "Forus",
         components:{
@@ -22,7 +24,8 @@
           ForusPart2,
           ForusPart3,
           ForusPart4,
-          ForusPart5
+          ForusPart5,
+          ForusPart6
         }
     }
 </script>
