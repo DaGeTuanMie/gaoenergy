@@ -61,6 +61,7 @@
     width 100%
     padding-top 50px
     background #ffffff
+    overflow hidden
     .wrapper
       width 1200px
       margin 0 auto
@@ -70,6 +71,7 @@
         font-family simsun
         padding 50px 0 20px
       .box
+        float left
         padding 20px 0 100px
         .box1
           float left
@@ -105,7 +107,6 @@
           border 1px solid #00cc99;
           box-shadow 0px 0px 10px
           transform scale(1,1.1)
-          background red
           transition 0.5s ease-in-out
         .one
           margin-right 15px
